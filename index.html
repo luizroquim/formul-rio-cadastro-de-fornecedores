@@ -17,6 +17,7 @@
             <div class="main-container">
                 <h1>Cadastro de Fornecedores</h1>
                 <p>Preencha o formulário abaixo para cadastrar seus fornecedores</p>
+                
                 <form method="post" enctype="multipart/form-data">
                     
                     <fieldset class="company-data">
@@ -89,7 +90,8 @@
 
                         <div class="file-container">
                             <label for="contrato">Contrato Social:</label>
-                            <input type="file" id="contrato" name="contrato" required>
+                            <input type="file" class="teste" id="contrato" name="contrato" required>
+                            <span class="check-icon"></span>
                             <button class="toggle-btn" data-target="contrato">Desativar</button>
                         </div>
 
@@ -115,8 +117,9 @@
                             <button class="toggle-btn" data-target="afe">Desativar</button>
                         </div>
 
-                        <div class="action-wrapper">
-                            <button class="btn" type="submit">Cadastrar</button>
+                        <div class="actions-wrapper">
+                            <button class="btn-secondary" type="button">Salvar respostas</button>
+                            <button class="btn-primary" type="submit">Cadastrar</button>
                         </div>
                     </fieldset>
                 </form>
@@ -127,13 +130,13 @@
             <div class="aside-container">
                 <header>
                     <h2>Transforme sua gestão de <span>fornecedores</span> e impulsione seu negócio!</h2>
-                    <p>Garanta parcerias confiáveis com um cadastro eficiente de fornecedores! Com um sistema estruturado, você facilita negociações, assegura conformidade legal e otimiza processos comerciais.</p>
-                    <img src="assets/notebookazul.jpg" alt="notebookazul">
+                    <p>Garanta parcerias confiáveis com um cadastro eficiente de fornecedores! Com um sistema estruturado, você facilita negociações, assegura conformidade legal e otimiza processos comerciais.</p> 
                 </header>
+                 <img src="assets/inicio.jpg" alt="">
             </div>
         </aside>
     </div>
-
+    <script src="js/button.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/validation.js"></script>
 </body>

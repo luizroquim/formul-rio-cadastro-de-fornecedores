@@ -1,0 +1,31 @@
+input{
+    
+    width: 100%;
+    border-radius: .5rem;
+    border: 2px solid transparent;
+    outline: 1px solid var(--stroke-default);
+    
+    padding: .75rem 1rem;
+    font: var(--text);  
+        
+}
+
+
+
+input:focus{
+    outline: .25rem solid lightblue;
+    border-color:var(--blue-medium);
+    outline-offset:.1px;
+}
+
+label{
+    font: var(--text-sm);
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.address .flex{
+    gap: 1.25rem;
+}
+
