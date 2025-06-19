@@ -1,32 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".toggle-btn").forEach(button => {
-        button.addEventListener("click", function (e) {
-            e.preventDefault(); // evita comportamento padrão do botão
-
-            // ID base do input
-            const targetId = this.dataset.target;
-
-            // Seleciona o input file correspondente
-            const fileInput = document.getElementById(targetId);
-
-            // Seleciona o input de validade, se existir
-            const dateInput = document.getElementById(`${targetId}_validade`);
-
-            if (fileInput) {
-                // Alterna estado de ativado/desativado
-                const isDisabled = !fileInput.disabled;
-                fileInput.disabled = isDisabled;
-                this.textContent = isDisabled ? "Ativar" : "Desativar";
-
-                // Se houver um campo de validade vinculado, alterna também
-                if (dateInput) {
-                    dateInput.disabled = isDisabled;
-                }
-            } else {
-                console.error(`Input com ID "${targetId}" não encontrado.`);
-            }
-        });
-    });
+    
         // Auto-preenchimento de endereço via CEP
 
     var cepInput = document.getElementById("cep");

@@ -10,8 +10,6 @@ input{
         
 }
 
-
-
 input:focus{
     outline: .25rem solid lightblue;
     border-color:var(--blue-medium);
@@ -29,3 +27,26 @@ label{
     gap: 1.25rem;
 }
 
+.date{
+  
+  margin-top: 1rem;  
+}
+
+
+
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .upload-btn,
+    .remove-btn,
+    .toggle-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease, opacity 0.3s ease;
+      white-space: nowrap;
+    }

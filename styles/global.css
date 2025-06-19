@@ -1,4 +1,5 @@
 *{
+    
     margin: 0;
     padding: 0;
     box-sizing:border-box;
@@ -12,8 +13,7 @@
     --text-primary:#292524;
     --text-secondary:#57534E;
     --text-tertiary:#8F8881;
-    --text-highlight:#E43A12;
-
+   
 
     --blue-light: #e8f1fc;
     --blue-medium: #3a7bd5;
@@ -29,10 +29,11 @@
     --stroke-highlight:#F3541C;
     --semantic-error:#DC2626;
 
-    /* --text-primary: #1a1a1a; */
+
 }
 
 body{
+    
     overflow: hidden;
     font:var(--text);
     color:var(--text-secondary);
@@ -45,6 +46,7 @@ h1,h2{
 img{
     max-width: 100%;
     height: auto;
+    
 }
 
 .flex {

@@ -89,32 +89,50 @@
                         <legend>Documentos</legend>
 
                         <div class="file-container">
-                            <label for="contrato">Contrato Social:</label>
-                            <input type="file" class="teste" id="contrato" name="contrato" required>
-                            <span class="check-icon"></span>
-                            <button class="toggle-btn" data-target="contrato">Desativar</button>
+                            <label for="contrato" class="file-label">Contrato Social:</label>
+                            <input type="file" id="contrato" name="contrato" multiple required>
+                            
+                            <button type="button" class="upload-btn">Selecionar arquivo</button>
+                            <button type="button" class="remove-btn">Remover</button>
+                            <button type="Desativar" class="toggle-btn" data-target="contrato">Desativar</button>
+                            <div class="file-feedback">Nenhum arquivo selecionado</div>
                         </div>
 
                         <div class="file-container">
-                            <label for="cnpjDoc">CNPJ:</label>
-                            <input type="file" id="cnpjDoc" name="cnpjDoc" required>
-                            <button class="toggle-btn" data-target="cnpjDoc">Desativar</button>
+                            <label for="cnpjDoc" class="file-label">CNPJ:</label>
+                            <input type="file" id="cnpjDoc" name="cnpjDoc" multiple required>
+                            
+                            <button type="button" class="upload-btn">Selecionar arquivo</button>
+                            <button type="button" class="remove-btn">Remover</button>
+                            <button type="Desativar" class="toggle-btn" data-target="cnpjDoc">Desativar</button>
+                            <div class="file-feedback">Nenhum arquivo selecionado</div>
+
+                            
                         </div>
 
                         <div class="file-container">
-                            <label for="sanitario">Alvará Sanitário:</label>
-                            <input type="file" id="sanitario" name="sanitario" required>
-
-                            <label for="sanitario_validade">Validade:</label>
+                            <label for="sanitario" class="file-label">Alvará Sanitário:</label>
+                            <input type="file" id="sanitario" name="sanitario" multiple required>
+                            
+                            <button type="button" class="upload-btn">Selecionar arquivo</button>
+                            <button type="button" class="remove-btn">Remover</button>
+                            <button type="Desativar" class="toggle-btn" data-target="sanitario">Desativar</button>
+                            <div class="file-feedback">Nenhum arquivo selecionado</div>
+                            
+                            
+                            <label class="date" for="sanitario_validade">Validade do Alvará Sanitário:</label>
                             <input type="date" id="sanitario_validade" name="sanitario_validade" required>
 
-                            <button class="toggle-btn" data-target="sanitario">Desativar</button>
                         </div>
 
                         <div class="file-container">
-                            <label for="afe">Autorização de Funcionamento da Anvisa:</label>
-                            <input type="file" id="afe" name="afe" required> 
-                            <button class="toggle-btn" data-target="afe">Desativar</button>
+                            <label for="afe" class="file-label">Autorização de funcionamento:</label>
+                            <input type="file" id="afe" name="afe" multiple required>
+                            
+                            <button type="button" class="upload-btn">Selecionar arquivo</button>
+                            <button type="button" class="remove-btn">Remover</button>
+                            <button type="Desativar" class="toggle-btn" data-target="afe">Desativar</button>
+                            <div class="file-feedback">Nenhum arquivo selecionado</div>
                         </div>
 
                         <div class="actions-wrapper">
@@ -132,7 +150,7 @@
                     <h2>Transforme sua gestão de <span>fornecedores</span> e impulsione seu negócio!</h2>
                     <p>Garanta parcerias confiáveis com um cadastro eficiente de fornecedores! Com um sistema estruturado, você facilita negociações, assegura conformidade legal e otimiza processos comerciais.</p> 
                 </header>
-                 <img src="assets/inicio.jpg" alt="">
+                 <img src="assets/inicio.png" alt="">
             </div>
         </aside>
     </div>
