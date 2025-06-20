@@ -135,11 +135,29 @@
                             <div class="file-feedback">Nenhum arquivo selecionado</div>
                         </div>
 
-                        <div class="actions-wrapper">
-                            <button class="btn-secondary" type="button">Salvar respostas</button>
-                            <button class="btn-primary" type="submit">Cadastrar</button>
-                        </div>
+                        
                     </fieldset>
+
+                    <fieldset class="file-container">
+                        <label>Avaliação do Fornecedor</label>
+                        <div class="stars" data-score="0">
+                            <span data-value="20">★</span>
+                            <span data-value="40">★</span>
+                            <span data-value="60">★</span>
+                            <span data-value="80">★</span>
+                            <span data-value="100">★</span>
+                        </div>
+                        <input type="hidden" name="avaliacao" id="avaliacao" value="0">
+                        <div id="nota-texto">Nota: 0</div>
+
+                    </fieldset>
+                    
+                        
+                    <div class="actions_wrapper">
+                        <button class="btn-secondary" type="button">Salvar respostas</button>
+                        <button class="btn-primary" type="submit">Cadastrar</button>
+                    </div>
+                        
                 </form>
             </div>
         </main>
@@ -155,7 +173,9 @@
         </aside>
     </div>
     <script src="js/button.js"></script>
+    <script src="js/rating.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/validation.js"></script>
+    
 </body>
 </html>

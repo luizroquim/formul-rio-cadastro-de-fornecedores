@@ -1,34 +1,33 @@
-@import url(fields/index.css);
+@import url('fields/index.css');
 
-form{
-    margin-top: 3rem;
-    
-}
+form {
+  margin-top: 3rem;
 
-fieldset{
-    border:none;
+  fieldset {
+    border: none;
     display: grid;
-    gap:1.5rem;
-}
+    gap: 1.5rem;
 
-legend{
-    font:600 1rem/1.25 var(--font-family);
-    margin-bottom:1.5rem;
-}
-fieldset + fieldset{
-    margin-top:1rem;
-}
+    & + fieldset {
+      margin-top: 1rem;
+    }
 
-.actions_wrapper{
-    margin-top:3rem;
+    legend {
+      font: 600 1rem/1.25 var(--font-family);
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .actions_wrapper {
+    margin-top: 2rem;
     display: flex;
-    gap:1rem;
-}
+    gap: 1rem;
+  }
 
-.file-container{
-    padding:1rem;
+  .file-container {
+    padding: 1rem;
     border: 1px solid var(--stroke-default);
     background-color: rgba(219, 237, 243, 0.032);
     border-radius: 1rem;
-    
+  }
 }

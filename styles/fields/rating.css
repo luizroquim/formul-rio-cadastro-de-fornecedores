@@ -1,0 +1,14 @@
+.stars{
+    display: inline-block;
+    direction: ltr;
+    font-size: 2rem;
+    color: lightgray;
+    cursor: pointer;
+
+    span {
+        &.hover,
+        &.selected {
+            color: gold;
+    }
+  }
+}
